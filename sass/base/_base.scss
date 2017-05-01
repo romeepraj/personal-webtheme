@@ -1,0 +1,47 @@
+body, html {
+	  height: 100%;
+	  margin: 0;
+	  font: 400 15px/1.8 $theme_font;
+	  color: $base_font_color;
+}
+a{
+    color:$theme_color;
+    text-decoration:none;
+}
+h1, h2,h3,h4,h5{
+    color:$heading_color;
+    font-family: $heading_font;
+}
+h1{
+    margin:5px 0px;
+    text-transform:uppercase;
+}
+h3{
+    margin-top:5px;
+    margin-bottom:25px;
+}
+.highlight{
+    color:$theme_color;
+}
+.intro{
+    font-family: 'Oxygen', sans-serif;
+    font-size:16px;
+}
+.line-top{
+    @include add-line(top)
+}
+.line-bottom{
+    @include add-line(bottom);
+}
+.slider{
+    position:fixed;
+    right:10px;
+    z-index:100;
+    top:50%;
+    ul{
+        li{
+            list-style:none;
+            padding:10px;
+        }
+    }
+}

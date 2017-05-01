@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oxygen");
+/* line 1, ../sass/base/_base.scss */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #5f5e5e;
+}
+
+/* line 7, ../sass/base/_base.scss */
+a {
+  color: #1db2e9;
+  text-decoration: none;
+}
+
+/* line 11, ../sass/base/_base.scss */
+h1, h2, h3, h4, h5 {
+  color: #292929;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 15, ../sass/base/_base.scss */
+h1 {
+  margin: 5px 0px;
+  text-transform: uppercase;
+}
+
+/* line 19, ../sass/base/_base.scss */
+h3 {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+/* line 23, ../sass/base/_base.scss */
+.highlight {
+  color: #1db2e9;
+}
+
+/* line 26, ../sass/base/_base.scss */
+.intro {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+}
+
+/* line 30, ../sass/base/_base.scss */
+.line-top {
+  width: 100%;
+  margin: 15px 0px;
+  height: 10px;
+  border-top: 1px dotted #1db2e9;
+}
+
+/* line 33, ../sass/base/_base.scss */
+.line-bottom {
+  width: 100%;
+  margin: 15px 0px;
+  height: 10px;
+  border-bottom: 1px dotted #1db2e9;
+}
+
+/* line 36, ../sass/base/_base.scss */
+.slider {
+  position: fixed;
+  right: 10px;
+  z-index: 100;
+  top: 50%;
+}
+/* line 42, ../sass/base/_base.scss */
+.slider ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+/* line 1, ../sass/module/_nav.scss */
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: transparent;
+}
+/* line 5, ../sass/module/_nav.scss */
+.navbar-inverse .navbar-nav {
+  float: right;
+  margin: 0;
+}
+/* line 11, ../sass/module/_nav.scss */
+.navbar-inverse .navbar-nav > li.active a {
+  background-color: #1db2e9;
+}
+/* line 14, ../sass/module/_nav.scss */
+.navbar-inverse .navbar-nav > li.active a:focus, .navbar-inverse .navbar-nav > li.active a:hover {
+  background-color: #1db2e9;
+}
+/* line 20, ../sass/module/_nav.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #1db2e9;
+  font-family: "Raleway", sans-serif;
+}
+/* line 27, ../sass/module/_nav.scss */
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+
+/* line 1, ../sass/module/_square.scss */
+.square_left {
+  width: 10px;
+  height: 10px;
+  background: #1db2e9;
+  float: left;
+}
+
+/* line 5, ../sass/module/_square.scss */
+.square_right, .squareblue {
+  width: 10px;
+  height: 10px;
+  background: #1db2e9;
+  float: right;
+}
+/* line 9, ../sass/module/_square.scss */
+.square_right.active, .squareblue.active {
+  opacity: 0.3;
+}
+
+/* line 14, ../sass/module/_square.scss */
+.squareblue1 {
+  width: 10px;
+  height: 10px;
+  background: #1db2e9;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+/* line 18, ../sass/module/_square.scss */
+.squareblue2 {
+  width: 5px;
+  height: 5px;
+  background: #1db2e9;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+/* line 23, ../sass/module/_square.scss */
+.squareblue3 {
+  width: 2px;
+  height: 2px;
+  background: #1db2e9;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5px;
+}
+
+/* line 27, ../sass/module/_square.scss */
+.fa-square {
+  font-size: 15px;
+  color: #1db2e9;
+  margin-top: -7px;
+  vertical-align: middle;
+}
+
+/* line 2, ../sass/module/_social.scss */
+ul.social {
+  padding: 0;
+  margin: 0;
+  display: inline-table;
+}
+/* line 7, ../sass/module/_social.scss */
+ul.social li {
+  float: left;
+  display: inline;
+  padding: 10px;
+}
+/* line 12, ../sass/module/_social.scss */
+ul.social li:first-child {
+  padding: 10px 10px 10px 0px;
+}
+
+/* line 1, ../sass/module/_button.scss */
+button.circle {
+  border: 2px solid #1db2e9;
+  padding: 14px;
+  border-radius: 10px;
+  width: 60px;
+  background: #f2f1ef;
+}
+/* line 7, ../sass/module/_button.scss */
+button.circle .fa {
+  color: #1db2e9;
+}
+
+/* line 11, ../sass/module/_button.scss */
+.btn-default {
+  background: #1db2e9;
+  border: none;
+  width: 100%;
+  border-radius: 0;
+  padding: 10px;
+  color: #fff;
+}
+
+/* line 19, ../sass/module/_button.scss */
+button.resume {
+  background: #1db2e9;
+  width: 100%;
+  max-width: 250px;
+  border: none;
+  padding: 10px;
+  margin-left: -17px;
+}
+/* line 26, ../sass/module/_button.scss */
+button.resume a {
+  color: #fff;
+}
+/* line 29, ../sass/module/_button.scss */
+button.resume a:hover {
+  color: #fff;
+}
+
+/* line 1, ../sass/module/_form.scss */
+.form-control {
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 25px;
+}
+
+/* line 8, ../sass/module/_form.scss */
+textarea {
+  min-height: 90px;
+}
+
+/* line 2, ../sass/layout/_layout.scss */
+.home {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/workstation-405768_1280.jpg");
+  text-align: center;
+  color: #fff;
+  min-height: 100%;
+}
+/* line 19, ../sass/base/_mixins.scss */
+.home h1 {
+  color: #fff;
+}
+/* line 6, ../sass/layout/_layout.scss */
+.home .home_wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+}
+/* line 10, ../sass/layout/_layout.scss */
+.home .home_wrapper .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+}
+
+/* line 20, ../sass/layout/_layout.scss */
+.contact {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/contact_googlemap_bg.png");
+  text-align: center;
+  color: #fff;
+}
+/* line 19, ../sass/base/_mixins.scss */
+.contact h1 {
+  color: #fff;
+}
+/* line 24, ../sass/layout/_layout.scss */
+.contact .contact-wrapper {
+  background: url("../images/contact_bg_desktop.png") repeat;
+  padding: 60px 0px;
+}
+/* line 28, ../sass/layout/_layout.scss */
+.contact .contact-wrapper .contact-form {
+  padding: 40px 0px;
+}
+/* line 32, ../sass/layout/_layout.scss */
+.contact .contact-wrapper .contact-address {
+  text-align: left;
+}
+/* line 34, ../sass/layout/_layout.scss */
+.contact .contact-wrapper .contact-address p {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* line 39, ../sass/layout/_layout.scss */
+.contact .contact-wrapper .contact-address p:hover {
+  background: #1db2e9;
+}
+
+/* line 47, ../sass/layout/_layout.scss */
+.about {
+  padding: 80px 0px;
+  text-align: center;
+  background: #f2f1ef;
+}
+/* line 50, ../sass/layout/_layout.scss */
+.about .about_photo {
+  margin-bottom: 10px;
+}
+/* line 52, ../sass/layout/_layout.scss */
+.about .about_photo img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+/* line 60, ../sass/layout/_layout.scss */
+.about .about_summary {
+  text-align: left;
+  margin-bottom: 10px;
+}
+/* line 63, ../sass/layout/_layout.scss */
+.about .about_summary h1, .about .about_summary h3 {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  /* line 63, ../sass/layout/_layout.scss */
+  .about .about_summary h1, .about .about_summary h3 {
+    text-align: left;
+  }
+}
+
+/* line 73, ../sass/layout/_layout.scss */
+.services {
+  padding: 80px 0px;
+  text-align: center;
+  background: white;
+}
+/* line 76, ../sass/layout/_layout.scss */
+.services .services-content {
+  margin: 40px 0px 0px 0px;
+}
+/* line 79, ../sass/layout/_layout.scss */
+.services .services-content .fa {
+  color: #1db2e9;
+  cursor: pointer;
+}
+/* line 84, ../sass/layout/_layout.scss */
+.services .services-content h3 {
+  margin: 25px 0px 15px 0px;
+}
+
+/* line 90, ../sass/layout/_layout.scss */
+.portfolio {
+  padding: 80px 0px;
+  text-align: center;
+  background: #f2f1ef;
+  cursor: pointer;
+}
+/* line 94, ../sass/layout/_layout.scss */
+.portfolio .portfolio_container {
+  margin-top: 40px;
+}
+/* line 99, ../sass/layout/_layout.scss */
+.portfolio .portfolio-image {
+  margin: 0px 0px 40px 0px;
+}
+/* line 101, ../sass/layout/_layout.scss */
+.portfolio .portfolio-image:hover .image {
+  opacity: 0.3;
+}
+/* line 105, ../sass/layout/_layout.scss */
+.portfolio .portfolio-image:hover .middle, .portfolio .portfolio-image:hover .squareblue1, .portfolio .portfolio-image:hover .squareblue2, .portfolio .portfolio-image:hover .squareblue3 {
+  opacity: 1;
+}
+/* line 109, ../sass/layout/_layout.scss */
+.portfolio .portfolio-image .text {
+  color: #000;
+  text-align: left;
+}
+/* line 114, ../sass/layout/_layout.scss */
+.portfolio .portfolio-image .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+/* line 123, ../sass/layout/_layout.scss */
+.portfolio .portfolio-image .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 5px;
+  border-left: 3px solid #1db2e9;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+footer {
+  background: #3b3a3a;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0px;
+  font-size: 11px;
+}

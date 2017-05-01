@@ -1,0 +1,16 @@
+ul.social
+{
+    padding:0;
+    margin:0;
+    display:inline-table;
+    
+    li {
+        float:left;
+        display:inline;
+        padding:10px;
+        
+        &:first-child{
+            padding:10px 10px 10px 0px;
+        }
+    }
+}

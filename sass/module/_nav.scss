@@ -1,0 +1,34 @@
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.5);
+    border-color: transparent;
+    
+    .navbar-nav{
+        float: right;
+        margin: 0;
+        
+        >li{
+            
+            &.active a{
+               background-color: $theme_color; 
+                
+                &:focus, &:hover{
+                    background-color: $theme_color;
+                }
+            }
+            
+            >a
+            {
+                color: $theme_color; 
+                font-family: $heading_font;
+            }
+            
+        }
+    }
+    .navbar-brand{
+        color:#fff;
+        font-family: $heading_font;
+    }
+}
+
+
+

@@ -1,0 +1,32 @@
+.square_left{
+        @include square(10px, $theme_color);
+        float:left;
+}
+.square_right, .squareblue{
+        @include square(10px, $theme_color);
+        float:right;
+    
+    &.active{
+        opacity:0.3;
+    }
+}
+
+.squareblue1{
+        @include square(10px, $theme_color);
+        @include squareextended(60%, 52%);
+}
+.squareblue2{
+        @include square(5px, $theme_color);
+        @include squareextended(65%, 52%);
+        
+}
+.squareblue3{
+        @include square(2px, $theme_color);
+        @include squareextended(70%, 52%);
+}
+.fa-square {
+    font-size:15px;
+    color:$theme_color;
+    margin-top: -7px;
+    vertical-align: middle;
+}

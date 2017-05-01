@@ -1,0 +1,131 @@
+
+.home {
+    @include add-img-background('../images/workstation-405768_1280.jpg');
+    min-height: 100%;
+    
+    .home_wrapper{
+       background:rgba(0,0,0,0.7);
+       height:100%;
+        
+      .caption {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 100%;
+      }
+    }
+}
+
+
+.contact{
+    @include add-img-background('../images/contact_googlemap_bg.png');
+    
+    .contact-wrapper
+    {
+        background:url('../images/contact_bg_desktop.png') repeat;
+        padding:60px 0px;
+        
+        .contact-form{
+            padding:40px 0px;
+        }
+        
+        .contact-address{
+            text-align: left;
+            p{
+                background:rgba(0,0,0,0.5);
+                padding:10px;
+                margin-bottom:20px;
+                
+                &:hover{
+                    background:$theme_color;
+                }
+            }
+        }
+    }
+}
+
+.about{
+   @include add-background(odd);
+    
+    .about_photo{
+        margin-bottom:10px;
+        img{
+            width:100%;
+            height:auto;
+            max-width:300px;
+            
+        }
+    }
+    
+    .about_summary{
+            text-align: left;
+            margin-bottom:10px;
+            h1, h3{
+              text-align: center;
+              @include respond-to(medium) { 
+                 text-align:left;
+           }
+        }
+       
+    }
+}
+
+.services{
+    @include add-background(even);
+    
+    .services-content{
+        margin:40px 0px 0px 0px;
+        
+        .fa{
+            color:$theme_color;
+            cursor: pointer;
+        }
+        
+        h3{
+            margin:25px 0px 15px 0px;
+        }
+    }
+}
+
+.portfolio{
+    @include add-background(odd);
+    cursor: pointer;
+    
+    .portfolio_container{
+        margin-top:40px;
+    }
+    
+    .portfolio-image
+    {
+        margin:0px 0px 40px 0px;
+        &:hover .image{
+            opacity:0.3;
+        }
+        
+        &:hover .middle, &:hover .squareblue1, &:hover .squareblue2, &:hover .squareblue3 {
+            opacity:1;
+        }
+        
+        .text{
+            color:#000;   
+            text-align:left;
+        }
+        
+        .image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+        
+        .middle {
+            @include squareextended (65%, 70%);
+            @include add-border(3px, $theme_color, left);
+        }
+    }
+}
+
+
+
